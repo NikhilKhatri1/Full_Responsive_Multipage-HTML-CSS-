@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Full responsive multipage website</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./public/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+    <!-- ----------------about us content--------------------- -->
+
+    <section class="about-us">
+        
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, totam porro? Ducimus libero
+                    sapiente, atque reprehenderit modi, officia dolorem qui, voluptas nulla repellendus tenetur
+                    veritatis fuga quaerat aperiam! Inventore accusantium, ipsum, optio illo voluptatibus blanditiis
+                    similique laboriosam quam praesentium nobis minima sit. Dolores sit animi deserunt perspiciatis et
+                    tempore optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolores placeat cum
+                    officiis numquam harum facilis corrupti expedita adipisci aliquam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Facere, fugit!</p>
+                <a href="#">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./public/images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- ----footer---- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos aliquam inventore sint delectus quam
+            modi fuga <br>culpa dicta earum vitae id iure, ipsam cumque labore. Sit, ratione similique</p>
+        <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-heart-fill"></i> by SenTa</p>
+    </section>
+
+    <!-- javascript for togglemenu -->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
