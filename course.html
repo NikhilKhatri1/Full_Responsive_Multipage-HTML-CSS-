@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Full responsive multipage website</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./public/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!------------------ Course --------------------- -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque molestias placeat illum
+                    unde reprehenderit adipisci architecto ut aspernatur, enim eius quae, pariatur, sapiente animi
+                    molestiae! Odit autem perferendis earum. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque molestias placeat illum
+                    unde reprehenderit adipisci architecto ut aspernatur, enim eius quae, pariatur, sapiente animi
+                    molestiae! Odit autem perferendis earum. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque molestias placeat illum
+                    unde reprehenderit adipisci architecto ut aspernatur, enim eius quae, pariatur, sapiente animi
+                    molestiae! Odit autem perferendis earum. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- -----------------facilties------------------- -->
+
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+            <div class="facilities-item">
+                <img src="./public/images/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, deleniti neque? Non eius optio
+                    doloribus maxime voluptate?</p>
+            </div>
+            <div class="facilities-item">
+                <img src="./public/images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, deleniti neque? Non eius optio
+                    doloribus maxime voluptate?</p>
+            </div>
+            <div class="facilities-item">
+                <img src="./public/images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, deleniti neque? Non eius optio
+                    doloribus maxime voluptate?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----footer---- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos aliquam inventore sint delectus quam
+            modi fuga <br>culpa dicta earum vitae id iure, ipsam cumque labore. Sit, ratione similique</p>
+        <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-heart-fill"></i> by SenTa</p>
+    </section>
+
+    <!-- javascript for togglemenu -->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
